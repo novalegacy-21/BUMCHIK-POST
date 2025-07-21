@@ -21,4 +21,4 @@ def handle_message(message):
     else:
         bot.send_message(message.chat.id, message.text)
 
-bot.infinity_polling()
+bot.polling(none_stop=True)
